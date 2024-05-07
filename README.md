@@ -8,7 +8,7 @@ será crucial para aplicativos que necessitam de uma lista dinâmica e extensa, 
 de notícias, listas de produtos ou qualquer interface que exija rolagem contínua e eficiente
 de dados
 
-<br></br>
+<br>
 
 Parte 1: Implementação Prática
 
