@@ -10,13 +10,13 @@
 
 ScrollView (Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.)
 
-    Beginning of Logic:
+    Beginning of Logic: Getting child RectTransforms from a parent RectTransform
     Initial configuration of a flexible content layout within a RectTransform, taking into account margins and orientation (horizontal or vertical).
     Positioning of child elements within the parent object's RectTransform, maintaining an orderly and spaced arrangement according to the layout orientation (horizontal or vertical).
 
 InfiniteScroll (Implementing infinite scroll functionality for a ScrollView, allowing items to dynamically reposition themselves when dragging or scrolling the ScrollView.)
 
-    Logic Start: Calling objects when initialized
+    Beginning of Logic: Calling objects when initialized
     ScrollRect to allow scrolling and moving ("unconstrained") based on scrollContent properties, respectively.
     Determining when an object starts to be dragged. Using an OnBeginDrag(PointerEventData eventData) callback function that is part of the IBeginDragHandler interface.
     Determining while an object is being dragged (during pointer movement). Using OnDrag(PointerEventData eventData) callback function from IDragHandler interface.
