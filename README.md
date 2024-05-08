@@ -62,3 +62,32 @@ ColotList
     
     Optimizing UI Updates: When working with elements that are dynamically updated in the UI, such as changes in color, size, or position, it is important to optimize the code to avoid unnecessary updates. For example, you can use efficient methods to modify UI elements only when necessary, thus minimizing update operations.
     
+<h3> 4 Project execution </h3> 
+
+Unity Editor Installation
+
+    install the Unity Editor in version 2022:3.27
+
+Clone the repository:
+
+    Locate the "Clone" button on the repository page.
+
+    Select the desired cloning method, such as HTTPS or SSH
+
+    Copy Clone URL: Copy the given clone URL. This URL represents the location of the repository on GitHub.
+
+    Alternatively, you can use the hotkey (usually F5) to launch the game
+
+Building for Deployment:
+
+    Select Build Platform: In the Unity Editor, go to File > Build Settings. Choose the target platform you want to build the project for (e.g. PC, Mac, Android, iOS).
+
+    Configure build settings: Configure build settings according to your platform requirements, such as resolution, graphics quality, and target device specifications.
+
+    Click the Build button: Once the settings are configured, click the "Build" button. Unity will generate the files necessary to run the game on the chosen platform.
+
+<h3> 5 Game Execution: <h/3> 
+
+    Access the URL below to download and run the APK (Android) or IPA (iOS) file on your device and tap it to start installing and running the game.
+
+    Access the URL below to open a web browser (such as Chrome, Firefox, Safari, etc.) to load the game's main HTML file
