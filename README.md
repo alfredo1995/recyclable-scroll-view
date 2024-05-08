@@ -8,7 +8,7 @@ https://github.com/alfredo1995/unity-infinite-reusable-scroll-view/assets/711938
 
 <h3> 1° Practical Implementation: Developed an infinite and recyclable ScrollView that can be used in mobile and desktop WebGL applications. </h3> 
 
-Script (ScrollView)
+ScrollView.cs
 
     Logic: Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.
     
