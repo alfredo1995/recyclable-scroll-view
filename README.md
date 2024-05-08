@@ -74,9 +74,7 @@ Unity Editor Installation
 
 Clone the repository:
 
-    Locate and Select the desired cloning method, such as HTTPS or SSH
-
-    Copy Clone URL: Copy the given clone URL. This URL represents the location of the repository on GitHub.
+    Find and select the desired cloning method, such as HTTPS or SSH (Copy Clone URL)
 
     Alternatively, you can use the hotkey (usually F5) to launch the game
  
