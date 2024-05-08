@@ -7,7 +7,9 @@
 ScrollView 
 
     Logic: Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.
+    
     Initial configuration of a flexible content layout within a RectTransform, taking into account margins and orientation (horizontal or vertical).
+    
     Positioning of child elements within the parent object's RectTransform, maintaining an orderly and spaced arrangement according to the layout orientation (horizontal or vertical).
 
 InfiniteScroll 
@@ -36,7 +38,9 @@ ColotList
 <h3> 2° Project Architecture (Component-Based Design) for each component to have a specific responsibility, such as managing game logic, the appearance of objects and user interaction. </h3> 
 
     Content Management System: ItemManager handling dynamic creation of items in the UI based on a list of colors. Where objects are instantiated and dynamically managed at runtime.
+    
     Factory Design Pattern: Using Instantiate to create objects from a prefab follows a simplified factory design pattern, where objects are created without the need for direct code construction, making the system more flexible and modular.
+    
     Scriptable Objects: Using a ScriptableObject to store a list of colors (ColorList) is a common practice for maintaining data and settings that can be shared between multiple objects and instances during game execution.
 
     This software architecture for game development follows principles of object-oriented design, modularity and component reuse. Contributing to organized, flexible, and scalable code as your game project evolves.
