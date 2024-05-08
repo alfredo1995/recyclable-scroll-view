@@ -60,7 +60,7 @@ ColotList
     
     Optimizing UI Updates: When working with elements that are dynamically updated in the UI, such as changes in color, size, or position, it is important to optimize the code to avoid unnecessary updates. For example, you can use efficient methods to modify UI elements only when necessary, thus minimizing update operations.
 
-    Implementing a recycling mechanism (Object Pooling) to remove recycled color elements from the visible area in a scroll view. (Calculate Visible Area (290 height) of the scroll view is to define its height and top position, while the bottom coincides with the sum of the top position and the height of the view (total container height more than 2000)
+    Implementing a recycling mechanism (Object Pooling) to remove recycled color elements from the visible area in a scroll view. (Missing to calculate the visible area (height 290) of the scroll view is to define its height and top position, while the bottom coincides with the sum of the top position and the height of the view (total container height 2000)
 <br>  
 <h3> 4 Project execution </h3> 
 
@@ -70,9 +70,7 @@ Unity Editor Installation
 
 Clone the repository:
 
-    Locate the "Clone" button on the repository page.
-
-    Select the desired cloning method, such as HTTPS or SSH
+    Locate and Select the desired cloning method, such as HTTPS or SSH
 
     Copy Clone URL: Copy the given clone URL. This URL represents the location of the repository on GitHub.
 
