@@ -1,4 +1,5 @@
-Technical test for a senior Unity developer 
+#Technical test for a senior Unity developer 
+
 focused on creating and optimizing a Infinite and recyclable scrollview. 
 
 The test can be divided into parts: soft and optimization. 
@@ -47,7 +48,8 @@ Part 2: Optimization Challenge
     dispositivos com recursos limitados. Tarefa:
 
     Optimize Scrollview to handle 10,000+ items without financial manipulation of performance. 
-    Provide a brief report in the repository explaining the optimization techniques applied and the results obtained. Rating criteria
+    Provide a brief report in the repository explaining the optimization techniques applied 
+    ,and the results obtained. Rating criteria
 
     Code Quality: Clarity, use of design patterns, modularity and ease of use maintenance.
     Performance: Efficiency in the use of user experience resources and specializations
