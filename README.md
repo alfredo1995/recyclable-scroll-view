@@ -36,6 +36,11 @@ ColotList
     
     Logic : Using ScriptableObject as a color list resource that can be created and managed in the Editor
 
+DetectVisibility 
+
+    Implementing a recycling mechanism (Object Pooling) to remove recycled color elements from the visible area in a scroll view. (Missing to calculate the visible area (height 290) of the scroll view is to define its height and top position, while the bottom coincides with the sum of the top position and the height of the view (total container height 2000)
+    
+
 <br>
 <h3> 2° Project Architecture (Component-Based Design) for each component to have a specific responsibility, such as managing game logic, the appearance of objects and user interaction. </h3> 
 
@@ -60,7 +65,6 @@ ColotList
     
     Optimizing UI Updates: When working with elements that are dynamically updated in the UI, such as changes in color, size, or position, it is important to optimize the code to avoid unnecessary updates. For example, you can use efficient methods to modify UI elements only when necessary, thus minimizing update operations.
 
-    Implementing a recycling mechanism (Object Pooling) to remove recycled color elements from the visible area in a scroll view. (Missing to calculate the visible area (height 290) of the scroll view is to define its height and top position, while the bottom coincides with the sum of the top position and the height of the view (total container height 2000)
 <br>  
 <h3> 4 Project execution </h3> 
 
