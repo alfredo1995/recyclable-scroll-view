@@ -1,51 +1,51 @@
-Teste técnico para um desenvolvedor sênior em Unity focado na criação e otimização de um
-Scrollview infinito e reciclável. O teste pode ser dividido em partes: implementação e
-otimização. A seguir, delineiam cada uma dessas partes
+Technical test for a senior Unity developer focused on creating and optimizing a
+Infinite and recyclable scrollview. The test can be divided into parts: soft and
+optimization. Below, each of these parts is outlined.
 
-Desenvolver um ScrollView no Unity que seja infinito e reciclável, otimizado para lidar com
-uma grande quantidade de elementos sem comprometer a performance. Este componente
-será crucial para aplicativos que necessitam de uma lista dinâmica e extensa, como feeds
-de notícias, listas de produtos ou qualquer interface que exija rolagem contínua e eficiente
-de dados
+Develop a ScrollView in Unity that is infinite and recyclable, optimized to handle
+a large number of elements without compromising performance. This component
+will be crucial for applications that appear in a large, dynamic list, such as feeds
+news, product lists or any interface that requires continuous and efficient scrolling
+of data
 
 <br>
 
-Parte 1: Implementação Prática
+Part 1: Practical Implementation
 
-Objetivo: Desenvolver um Scrollview infinito e reciclável que possa ser usado em
-aplicações mobile e desktop webgl. Requisitos:
-      
-    1. Funcionalidade Básica:
-    - O Scrollview deve ser capaz de carregar e reciclar elementos de forma eficiente, sem
-    perda de performance ao rolar para cima e para baixo infinitamente.
-    - Os dados podem ser simples números ou textos representando itens.
-    
-    2. Interface e Interação:
-    - Implementar feedback visual para mostrar que o carregamento está ocorrendo quando
-    novos itens estão sendo carregados.
-    - Assegurar que o scroll seja suave e sem saltos visuais ou "lags".
-    
-    3. Dados:
-    - Use uma lista de dados fictícios (por exemplo, uma lista de nomes ou números) para
-    demonstrar a funcionalidade.
-    
-    4. Extras:
-    - Implementar uma funcionalidade de "pull-to-refresh" no topo da lista.
-    - Adicionar uma funcionalidade para detectar quando o usuário chega ao fim da lista e
-    carregar mais itens automaticamente.
-    
-Parte 2: Desafio de Otimização
+Objective: Develop an infinite and recyclable Scrollview that can be used in
+webgl mobile and desktop applications. Requirements:
 
-Objetivo: Demonstrar habilidades avançadas na otimização de UI em Unity para
-dispositivos com recursos limitados. Tarefa:
+ 1. Basic Functionality:
+ - Scrollview must be able to load and recycle elements efficiently without
+ loss of performance when scrolling up and down infinitely.
+ - Data can be simple numbers or texts representing items.
 
-    - Otimize o Scrollview para lidar com mais de 10.000 itens sem degradação perceptível de
-    performance.
-    - Forneça um breve relatório no repositório explicando as técnicas de otimização aplicadas
-    e os resultados obtidos.
-    
-Critérios de Avaliação
+ 2. Interface and Interaction:
+ - Implement visual feedback to show that charging is occurring when
+ new items are being uploaded.
+ - Make sure the scroll is smooth and without visual jumps or "lags".
 
-    - Qualidade do Código: Clareza, uso de padrões de projeto, modularidade e facilidade de
-    manutenção.
-    - Performance: Eficiência no uso de recursos e suavidade da experiência do usuário
+ 3. Data:
+ - Use a list of fictitious data (for example, a list of names or numbers) to
+ demonstrate a functionality.
+
+ 4. Extras:
+ - Implement a "pull-to-refresh" functionality at the top of the list.
+ - Add functionality to detect when the user reaches the end of the list and
+ load more items automatically.
+
+Part 2: Optimization Challenge
+
+Objective: Demonstrate advanced skills in UI optimization in Unity for
+devices with limited resources. Task:
+
+ - Optimize Scrollview to handle 10,000+ items without financial manipulation of
+ performance.
+ - Provide a brief report in the repository explaining the optimization techniques applied
+ and the results obtained.
+
+Rating criteria
+
+ - Code Quality: Clarity, use of design patterns, modularity and ease of use
+ maintenance.
+ - Performance: Efficiency in the use of user experience resources and specializations
