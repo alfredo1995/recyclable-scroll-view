@@ -30,8 +30,8 @@ Develop an infinite and recyclable Scrollview that can be used in webgl mobile a
 
     4. Extras:
         
-        Implemente uma funcionalidade “pull-to-refresh” no topo da lista.
-        Adicione funcionalidade para detectar quando o usuário chega ao final da lista e carregar mais itens automaticamente.
+    Implement a “pull-to-refresh” feature at the top of the list.
+    Add functionality to detect when the user reaches the end of the list and automatically load more items.
 
 Part 2: Optimization Challenge
 
