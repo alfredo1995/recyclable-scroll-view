@@ -62,6 +62,7 @@ ColotList
     
     Optimizing UI Updates: When working with elements that are dynamically updated in the UI, such as changes in color, size, or position, it is important to optimize the code to avoid unnecessary updates. For example, you can use efficient methods to modify UI elements only when necessary, thus minimizing update operations.
     
+<br>  
 <h3> 4 Project execution </h3> 
 
 Unity Editor Installation
@@ -85,7 +86,8 @@ Building for Deployment:
     Configure build settings: Configure build settings according to your platform requirements, such as resolution, graphics quality, and target device specifications.
 
     Click the Build button: Once the settings are configured, click the "Build" button. Unity will generate the files necessary to run the game on the chosen platform.
-
+    
+<br>
 <h3> 5 Game Execution: <h/3> 
 
     Access the URL below to download and run the APK (Android) or IPA (iOS) file on your device and tap it to start installing and running the game.
