@@ -62,7 +62,7 @@ ColotList
     
     Optimizing UI Updates: When working with elements that are dynamically updated in the UI, such as changes in color, size, or position, it is important to optimize the code to avoid unnecessary updates. For example, you can use efficient methods to modify UI elements only when necessary, thus minimizing update operations.
 
-    Implementing a recycling mechanism (Object Pooling) to remove recycled color elements from the visible area in a scroll view
+    Implementing a recycling mechanism (Object Pooling) to remove recycled color elements from the visible area in a scroll view. (Calculate Visible Area (290 height) of the scroll view is to define its height and top position, while the bottom coincides with the sum of the top position and the height of the view (total container height more than 2000)
 <br>  
 <h3> 4 Project execution </h3> 
 
