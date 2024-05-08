@@ -1,8 +1,5 @@
 Technical test for a senior Unity developer focused on creating and optimizing a Infinite and recyclable scrollview. 
 
-The test can be divided into parts: soft and optimization. 
-Below, each of these parts is outlined.
-
 Develop a ScrollView in Unity that is infinite and recyclable, optimized to handle a large number of elements 
 without compromising performance. 
 
