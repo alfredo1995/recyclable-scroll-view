@@ -22,7 +22,7 @@ Develop an infinite and recyclable Scrollview that can be used in webgl mobile a
         Make sure the scroll is smooth and without visual jumps or "lags".
 
     3. Data:
-        Use a list of fictitious data (for example, a list of names or numbers) to demonstrate a functionality.
+        Use a list of fictitious data to demonstrate a functionality.
 
     4. Extras:
         
