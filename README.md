@@ -6,38 +6,33 @@
 
 <br>
 
-Part 1: Practical Implementation
+# Practical Implementation: Developed an infinite and recyclable Scrollview that can be used in mobile and desktop webgl applications.
 
-Develop an infinite and recyclable Scrollview that can be used in webgl mobile and desktop applications. 
+ScrollView (Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.)
 
-    1. Basic Functionality:
-    
-        Scrollview should be able to load and recycle elements
-        efficiently without performance loss when scrolling up and down infinitely.
+    Beginning of Logic:
+    Initial configuration of a flexible content layout within a RectTransform, taking into account margins and orientation (horizontal or vertical).
+    Positioning of child elements within the parent object's RectTransform, maintaining an orderly and spaced arrangement according to the layout orientation (horizontal or vertical).
 
-        Data can be simple numbers or texts that represent items.
+InfiniteScroll (Implementing infinite scroll functionality for a ScrollView, allowing items to dynamically reposition themselves when dragging or scrolling the ScrollView.)
 
-    2. Interface and Interaction:
-    
-        Implement visual feedback to show that charging is occurring when new items are being uploaded. 
-        Make sure the scroll is smooth and without visual jumps or "lags".
+    Logic Start: Calling objects when initialized
+    ScrollRect to allow scrolling and moving ("unconstrained") based on scrollContent properties, respectively.
+    Determining when an object starts to be dragged. Using an OnBeginDrag(PointerEventData eventData) callback function that is part of the IBeginDragHandler interface.
+    Determining while an object is being dragged (during pointer movement). Using OnDrag(PointerEventData eventData) callback function from IDragHandler interface.
+    Scroll event, movement of the mouse scroll wheel. Using an OnScroll(PointerEventData eventData) callback from the IScrollHandler interface.
+    OnViewScroll() function to handle scroll events in a view component.
+    ReachedThreshold(Transform item) function checking whether an item has reached the limit for scrolling out of view in a ScrollView, based on the orientation (vertical or horizontal) of the ScrollView and the user's dragging direction.
 
-    3. Data:
-        Use a list of fictitious data to demonstrate a functionality.
+ItemManager (Managing the dynamic creation of image items (Image) with specific colors, limiting the number of items created based on a color list (ColotList).
 
-    4. Extras:
-        
-    Implement a “pull-to-refresh” feature at the top of the list.
-    Add functionality to detect when the user reaches the end of the list and automatically load more items.
+ColotList (Using ScriptableObject as a color list resource that can be created and managed in the Editor)
 
-Part 2: Optimization Challenge
 
-    Objective: Demonstrate advanced skills in UI optimization in Unity to devices with limited resources. Task:
+# Project Architecture (Component-Based Design) for each component to have a specific responsibility, such as managing game logic, the appearance of objects and user interaction.
 
-    Optimize Scrollview to handle 10,000+ items without financial manipulation of performance. 
-    A brief report in the repository explaining the optimization techniques applied ,and the results obtained. 
-    
-    Rating criteria
-    
-    Code Quality: Clarity, use of design patterns, modularity and ease of use maintenance.
-    Performance: Efficiency in the use of user experience resources and specializations
+    Content Management System: ItemManager handling dynamic creation of items in the UI based on a list of colors. Where objects are instantiated and dynamically managed at runtime.
+    Factory Design Pattern: Using Instantiate to create objects from a prefab follows a simplified factory design pattern, where objects are created without the need for direct code construction, making the system more flexible and modular.
+    Scriptable Objects: Using a ScriptableObject to store a list of colors (ColorList) is a common practice for maintaining data and settings that can be shared between multiple objects and instances during game execution.
+
+This software architecture for game development follows principles of object-oriented design, modularity and component reuse. Contributing to organized, flexible, and scalable code as your game project evolves.
