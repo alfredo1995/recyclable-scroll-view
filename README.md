@@ -7,7 +7,7 @@ without compromising performance.
 
 Part 1: Practical Implementation
 
-Develop an infinite and recyclable Scrollview that can be used in webgl mobile and desktop applications. Requirements:
+Develop an infinite and recyclable Scrollview that can be used in webgl mobile and desktop applications. 
 
     1. Basic Functionality:
     
