@@ -6,7 +6,7 @@
 
 <br>
 
-<strong> <big>  <big> Practical Implementation: Developed an infinite and recyclable Scrollview that can be used in mobile and desktop webgl applications.
+font-size="2" <big> Practical Implementation: Developed an infinite and recyclable Scrollview that can be used in mobile and desktop webgl applications.
 
 ScrollView (Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.)
 
