@@ -34,7 +34,7 @@ Part 2: Optimization Challenge
     Objective: Demonstrate advanced skills in UI optimization in Unity to devices with limited resources. Task:
 
     Optimize Scrollview to handle 10,000+ items without financial manipulation of performance. 
-    Provide a brief report in the repository explaining the optimization techniques applied ,and the results obtained. 
+    A brief report in the repository explaining the optimization techniques applied ,and the results obtained. 
     
     Rating criteria
     
