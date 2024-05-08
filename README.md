@@ -88,7 +88,7 @@ Building for Deployment:
     Click the Build button: Once the settings are configured, click the "Build" button. Unity will generate the files necessary to run the game on the chosen platform.
     
 <br>
-<h3> 5 Game Execution: <h/3> 
+<h3> 5 Game Execution: </h3> 
 
     Access the URL below to download and run the APK (Android) or IPA (iOS) file on your device and tap it to start installing and running the game.
 
