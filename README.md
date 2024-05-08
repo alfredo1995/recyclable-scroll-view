@@ -1,11 +1,6 @@
 <h1>  ScrollView in Unity infinite and recyclable, optimized to handle a large number of elements without compromising performance. </h2> 
 
-
-<br>
-
 ![unity-infinite-reusable-scroll-view](https://github.com/alfredo1995/infinite-scroll-view/assets/71193893/6d877a7f-02d5-4911-83a3-8685e4d142da)
-
-<br>
 
 <h3> 1° Practical Implementation: Developed an infinite and recyclable ScrollView that can be used in mobile and desktop WebGL applications. </h3> 
 
