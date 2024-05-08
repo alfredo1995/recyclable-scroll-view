@@ -20,13 +20,11 @@ InfiniteScroll
 
     Logic: Implementing infinite scroll functionality for a ScrollView, allowing items to dynamically reposition themselves when dragging or scrolling the ScrollView.
     
-    ScrollRect to allow scrolling and moving ("unconstrained") based on scrollContent properties, respectively.
+    ScrollRect to allow ("unrestricted") scrolling and movement based on the scrollContent properties, respectively.
+        
+    Determining when an object starts dragging with an OnBeginDrag function. While an object is being dragged (during pointer movement). Using the OnDrag function
     
-    Determining when an object starts to be dragged. Using an OnBeginDrag(PointerEventData eventData) callback function that is part of the IBeginDragHandler interface.
-    
-    Determining while an object is being dragged (during pointer movement). Using OnDrag(PointerEventData eventData) callback function from IDragHandler interface.
-    
-    Scroll event, movement of the mouse scroll wheel. Using an OnScroll(PointerEventData eventData) callback from the IScrollHandler interface. OnViewScroll() function to handle scroll events in a view component.
+    Scroll event, mouse scroll wheel movement. Returning the OnScroll call. Using the OnViewScroll() Function to handle scroll events in a view component.
     
     ReachedThreshold(Transform item) function checking whether an item has reached the limit for scrolling out of view in a ScrollView, based on the orientation (vertical or horizontal) of the ScrollView and the user's dragging direction.
 
