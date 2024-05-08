@@ -66,7 +66,7 @@ DetectVisibility.cs
     Optimizing UI Updates: When working with elements that are dynamically updated in the UI, such as changes in color, size, or position, it is important to optimize the code to avoid unnecessary updates. For example, you can use efficient methods to modify UI elements only when necessary, thus minimizing update operations.
 
 <br>  
-<h3> 4° Project execution </h3> 
+<h3> 4° Project Execution </h3> 
 
 Unity Editor Installation
 
