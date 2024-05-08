@@ -66,7 +66,7 @@ DetectVisibility.cs
     Optimizing UI Updates: When working with elements that are dynamically updated in the UI, such as changes in color, size, or position, it is important to optimize the code to avoid unnecessary updates. For example, you can use efficient methods to modify UI elements only when necessary, thus minimizing update operations.
 
 <br>  
-<h3> 4 Project execution </h3> 
+<h3> 4° Project execution </h3> 
 
 Unity Editor Installation
 
@@ -79,7 +79,7 @@ Clone the repository:
     Alternatively, you can use the hotkey (usually F5) to launch the game
  
 <br>
-<h3> 5 Game Execution: </h3> 
+<h3> 5° Game Execution: </h3> 
 
     Access the URL below to download and run the APK (Android) or IPA (iOS) file on your device and tap it to start installing and running the game. 
 > https://abre.ai/webgl-scroll-view   
