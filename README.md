@@ -21,8 +21,7 @@ Develop an infinite and recyclable Scrollview that can be used in webgl mobile a
     2. Interface and Interaction:
     
     Implement visual feedback to show that charging is
-    occurring when new items are being uploaded.
-    Make sure the scroll is smooth and without visual jumps or "lags".
+    occurring when new items are being uploaded. Make sure the scroll is smooth and without visual jumps or "lags".
 
     3. Data:
         Use a list of fictitious data (for example, a list of names or numbers)
