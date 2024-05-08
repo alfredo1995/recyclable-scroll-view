@@ -1,4 +1,5 @@
-# ScrollView in Unity infinite and recyclable, optimized to handle a large number of elements without compromising performance. 
+<h1>  ScrollView in Unity infinite and recyclable, optimized to handle a large number of elements without compromising performance. </h2> 
+
 
 <br>
 
@@ -6,7 +7,7 @@
 
 <br>
 
-<h3>  Practical Implementation: Developed an infinite and recyclable ScrollView that can be used in mobile and desktop WebGL applications. </h3> 
+<h3> 1° Practical Implementation: Developed an infinite and recyclable ScrollView that can be used in mobile and desktop WebGL applications. </h3> 
 
 ScrollView (Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.)
 
