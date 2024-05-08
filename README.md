@@ -20,12 +20,16 @@ InfiniteScroll (Implementing infinite scroll functionality for a ScrollView, all
     OnViewScroll() function to handle scroll events in a view component.
     ReachedThreshold(Transform item) function checking whether an item has reached the limit for scrolling out of view in a ScrollView, based on the orientation (vertical or horizontal) of the ScrollView and the user's dragging direction.
 
-ItemManager (Managing the dynamic creation of image items (Image) with specific colors, limiting the number of items created based on a color list (ColotList).
+ItemManager 
 
-ColotList (Using ScriptableObject as a color list resource that can be created and managed in the Editor)
+    Managing the dynamic creation of image items (Image) with specific colors, limiting the number of items created based on a color list (ColotList).
+
+ColotList 
+    
+    Using ScriptableObject as a color list resource that can be created and managed in the Editor
 
 
-<strong>  Project Architecture (Component-Based Design) for each component to have a specific responsibility, such as managing game logic, the appearance of objects and user interaction.
+<strong> 2° Project Architecture (Component-Based Design) for each component to have a specific responsibility, such as managing game logic, the appearance of objects and user interaction.
 
     Content Management System: ItemManager handling dynamic creation of items in the UI based on a list of colors. Where objects are instantiated and dynamically managed at runtime.
     Factory Design Pattern: Using Instantiate to create objects from a prefab follows a simplified factory design pattern, where objects are created without the need for direct code construction, making the system more flexible and modular.
