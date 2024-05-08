@@ -9,9 +9,6 @@ Develop a ScrollView in Unity that is infinite and recyclable,
 optimized to handle a large number of elements 
 without compromising performance. 
 
-This component will be crucial for applications that appear in a large, dynamic list, such as feeds news,
-product lists or any interface that requires continuous and efficient scrolling of data
-
 <br>
 
 Part 1: Practical Implementation
