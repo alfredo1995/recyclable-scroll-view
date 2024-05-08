@@ -1,6 +1,4 @@
-#Technical test for a senior Unity developer 
-
-focused on creating and optimizing a Infinite and recyclable scrollview. 
+Technical test for a senior Unity developer focused on creating and optimizing a Infinite and recyclable scrollview. 
 
 The test can be divided into parts: soft and optimization. 
 Below, each of these parts is outlined.
