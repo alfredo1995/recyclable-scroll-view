@@ -1,4 +1,6 @@
-Technical test for a senior Unity developer focused on creating and optimizing a Infinite and recyclable scrollview. 
+![unity-infinite-reusable-scroll-view](https://github.com/alfredo1995/infinite-scroll-view/assets/71193893/6d877a7f-02d5-4911-83a3-8685e4d142da)
+
+Technica l test for a senior Unity developer focused on creating and optimizing a Infinite and recyclable scrollview. 
 
 Develop a ScrollView in Unity that is infinite and recyclable, optimized to handle a large number of elements 
 without compromising performance. 
