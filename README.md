@@ -44,3 +44,16 @@ ColotList
     Scriptable Objects: Using a ScriptableObject to store a list of colors (ColorList) is a common practice for maintaining data and settings that can be shared between multiple objects and instances during game execution.
 
     This software architecture for game development follows principles of object-oriented design, modularity and component reuse. Contributing to organized, flexible, and scalable code as your game project evolves.
+<br>
+<h3> Applied optimization techniques and the results obtained.
+
+    Use of Object Pooling: In the InfiniteScroll script, the object pooling technique is employed by recycling existing elements instead of instantiating new objects whenever necessary. This helps reduce memory usage and processing associated with frequently creating and destroying objects in the UI.
+
+    Dynamic Item Creation: In ItemManager, you dynamically create items based on a list of colors. This can be optimized by properly configuring the object pool and ensuring that unused elements are disabled when off-screen to reduce resource usage.
+
+    Use of Prefabs and Reusable Components: The use of prefabs and reusable components such as Image, RectTransform, etc. contributes to the modularity and reusability of UI elements, which can improve development efficiency and UI performance.
+
+    Configuration of ScrollViews: In the ScrollContent and InfiniteScroll scripts, you are dealing with the configuration and manipulation of ScrollViews. Ensuring that ScrollViews and their contents are configured correctly in terms of size, layout, and positioning can improve the fluidity and responsiveness of the UI, especially on devices with different      resolutions.
+    
+    Optimizing UI Updates: When working with elements that are dynamically updated in the UI, such as changes in color, size, or position, it is important to optimize the code to avoid unnecessary updates. For example, you can use efficient methods to modify UI elements only when necessary, thus minimizing update operations.
+    
