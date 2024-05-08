@@ -78,15 +78,7 @@ Clone the repository:
     Copy Clone URL: Copy the given clone URL. This URL represents the location of the repository on GitHub.
 
     Alternatively, you can use the hotkey (usually F5) to launch the game
-
-Building for Deployment:
-
-    Select Build Platform: In the Unity Editor, go to File > Build Settings. Choose the target platform you want to build the project for (e.g. PC, Mac, Android, iOS).
-
-    Configure build settings: Configure build settings according to your platform requirements, such as resolution, graphics quality, and target device specifications.
-
-    Click the Build button: Once the settings are configured, click the "Build" button. Unity will generate the files necessary to run the game on the chosen platform.
-    
+ 
 <br>
 <h3> 5 Game Execution: </h3> 
 
