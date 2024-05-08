@@ -45,7 +45,7 @@ ColotList
 
     This software architecture for game development follows principles of object-oriented design, modularity and component reuse. Contributing to organized, flexible, and scalable code as your game project evolves.
 <br>
-<h3> Applied optimization techniques and the results obtained.
+<h3> 3° Applied optimization techniques and the results obtained. </h3>
 
     Use of Object Pooling: In the InfiniteScroll script, the object pooling technique is employed by recycling existing elements instead of instantiating new objects whenever necessary. This helps reduce memory usage and processing associated with frequently creating and destroying objects in the UI.
 
