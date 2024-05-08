@@ -4,15 +4,15 @@
 
 <h3> 1° Practical Implementation: Developed an infinite and recyclable ScrollView that can be used in mobile and desktop WebGL applications. </h3> 
 
-ScrollView (Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.)
+ScrollView 
 
-    Beginning of Logic: Getting child RectTransforms from a parent RectTransform
+    Logic: Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.
     Initial configuration of a flexible content layout within a RectTransform, taking into account margins and orientation (horizontal or vertical).
     Positioning of child elements within the parent object's RectTransform, maintaining an orderly and spaced arrangement according to the layout orientation (horizontal or vertical).
 
-InfiniteScroll (Implementing infinite scroll functionality for a ScrollView, allowing items to dynamically reposition themselves when dragging or scrolling the ScrollView.)
+InfiniteScroll 
 
-    Beginning of Logic: Calling objects when initialized
+    Logic: Implementing infinite scroll functionality for a ScrollView, allowing items to dynamically reposition themselves when dragging or scrolling the ScrollView.
     ScrollRect to allow scrolling and moving ("unconstrained") based on scrollContent properties, respectively.
     Determining when an object starts to be dragged. Using an OnBeginDrag(PointerEventData eventData) callback function that is part of the IBeginDragHandler interface.
     Determining while an object is being dragged (during pointer movement). Using OnDrag(PointerEventData eventData) callback function from IDragHandler interface.
@@ -22,11 +22,11 @@ InfiniteScroll (Implementing infinite scroll functionality for a ScrollView, all
 
 ItemManager 
 
-    Managing the dynamic creation of image items (Image) with specific colors, limiting the number of items created based on a color list (ColotList).
+    Logic : Managing the dynamic creation of image items (Image) with specific colors, limiting the number of items created based on a color list (ColotList).
 
 ColotList 
     
-    Using ScriptableObject as a color list resource that can be created and managed in the Editor
+    Logic : Using ScriptableObject as a color list resource that can be created and managed in the Editor
 
 <br>
 <h3> 2° Project Architecture (Component-Based Design) for each component to have a specific responsibility, such as managing game logic, the appearance of objects and user interaction. </h3> 
