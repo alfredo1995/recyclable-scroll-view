@@ -8,7 +8,7 @@ https://github.com/alfredo1995/unity-infinite-reusable-scroll-view/assets/711938
 
 <h3> 1° Practical Implementation: Developed an infinite and recyclable ScrollView that can be used in mobile and desktop WebGL applications. </h3> 
 
-ScrollView 
+Script ScrollView
 
     Logic: Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.
     
@@ -16,7 +16,7 @@ ScrollView
     
     Positioning of child elements within the parent object's RectTransform, maintaining an orderly and spaced arrangement according to the layout orientation (horizontal or vertical).
 
-InfiniteScroll 
+Script InfiniteScroll 
 
     Logic: Implementing infinite scroll functionality for a ScrollView, allowing items to dynamically reposition themselves when dragging or scrolling the ScrollView.
     
@@ -28,15 +28,15 @@ InfiniteScroll
     
     ReachedThreshold(Transform item) function checking whether an item has reached the limit for scrolling out of view in a ScrollView, based on the orientation (vertical or horizontal) of the ScrollView and the user's dragging direction.
 
-ItemManager 
+Script ItemManager 
 
     Logic : Managing the dynamic creation of image items (Image) with specific colors, limiting the number of items created based on a color list (ColotList).
 
-ColotList 
+Script ColotList 
     
     Logic : Using ScriptableObject as a color list resource that can be created and managed in the Editor
 
-DetectVisibility 
+Script DetectVisibility 
 
     Implementing a recycling mechanism (Object Pooling) to remove recycled color elements from the visible area in a scroll view. (Missing to calculate the visible area (height 290) of the scroll view is to define its height and top position, while the bottom coincides with the sum of the top position and the height of the view (total container height 2000)
     
