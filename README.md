@@ -91,5 +91,6 @@ Building for Deployment:
 <h3> 5 Game Execution: </h3> 
 
     Access the URL below to download and run the APK (Android) or IPA (iOS) file on your device and tap it to start installing and running the game.
+    
 
     Access the URL below to open a web browser (such as Chrome, Firefox, Safari, etc.) to load the game's main HTML file
