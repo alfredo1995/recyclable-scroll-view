@@ -10,13 +10,13 @@ https://github.com/alfredo1995/unity-infinite-reusable-scroll-view/assets/711938
 
 ScrollView.cs
 
-    Logic: Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.
+    Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.
     
     Initial configuration of a flexible content layout within a RectTransform, taking into account margins and orientation (horizontal or vertical).
     
 InfiniteScroll.cs
 
-    Logic: Implementing infinite scroll functionality for a ScrollView, allowing items to dynamically reposition themselves when dragging or scrolling the ScrollView.
+    Implementing infinite scroll functionality for a ScrollView, allowing items to dynamically reposition themselves when dragging or scrolling the ScrollView.
             
     Determining drags, scroll events, mouse scroll wheel movement, ScrollRect and handling them in view components    
     
@@ -24,11 +24,11 @@ InfiniteScroll.cs
 
 ItemManager.cs
 
-    Logic : Managing the dynamic creation of image items (Image) with specific colors, limiting the number of items created based on a color list (ColotList).
+    Managing the dynamic creation of image items (Image) with specific colors, limiting the number of items created based on a color list (ColotList).
 
 ColotList.cs
     
-    Logic : Using ScriptableObject as a color list resource that can be created and managed in the Editor
+    Using ScriptableObject as a color list resource that can be created and managed in the Editor
 
 DetectVisibility.cs
 
