@@ -18,21 +18,21 @@ public class DetectVisibility : MonoBehaviour
 
     private void Awake()
     {
-        int t = 0;
+        //int t = 0;
 
-        if (colotList.colors.Count > 10)
-            t = 10;
-        else
-            t = colotList.colors.Count;
+        //if (colotList.colors.Count > 10)
+        //    t = 10;
+        //else
+        //    t = colotList.colors.Count;
 
-        for (int i = 0; i < t; i++)
-        {
-            Image img = Instantiate(objPrefab, content).GetComponent<Image>();
-            img.color = colotList.colors[i];
-            img.GetComponent<ItemIndex>().colotList = colotList;
-            img.GetComponent<ItemIndex>().id = i;
+        //for (int i = 0; i < t; i++)
+        //{
+        //    Image img = Instantiate(objPrefab, content).GetComponent<Image>();
+        //    img.color = colotList.colors[i];
+        //    img.GetComponent<ItemManager>().colotList = colotList;
+        //    img.GetComponent<ItemManager>().id = i;
 
-            obj.Add(img);
-        }
+        //    obj.Add(img);
+        //}
     }
 }
