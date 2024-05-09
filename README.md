@@ -46,16 +46,16 @@ DetectVisibility.cs
 <br>
 <h3> 3° Applied optimization techniques and the results obtained. </h3>
 
-    Use of object pooling in the InfiniteScroll and DetectVisibility scripts, using the object pooling technique to recycle existing elements instead of instantiating new objects whenever necessary.
-
-    Dynamic creation of items based on a master list. Optimizing the set of objects and ensuring that elements are not used disabled when they are off-screen to reduce resource usage.
-
+    Optimizing elements that dynamically update in the UI, such as color, size, or position changes
+    
+    Using the object pooling technique to recycle existing elements instead of instantiating new objects whenever necessary.
+    
+    Dynamic creation of items based on a master list. Optimizing the set of objects and ensuring that elements are not used is disabled when they are off-screen to reduce resource usage.
+    
     Use of pre-made and reusable components like Image, RectTransform, etc. Contributing to modularity and reuse of UI elements, improving development efficiency and performance.
 
     Manipulation of ScrollViews so that your content is correctly configured in terms of size, layout and positioning to improve UI fluidity and responsiveness
-
-    Optimizing elements that dynamically update in the UI, such as color, size, or position changes
-    
+   
 <br>  
 <h3> 4° Project Execution </h3> 
 
