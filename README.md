@@ -29,6 +29,7 @@ ColotList.cs
 DetectVisibility.cs
 
     Implementing a recycling mechanism (Object Pooling) to remove recycled color elements from the visible area in a scroll view. 
+    
     Missing to calculate the visible area (height 290) of the scroll view is to define its height and top position, while the bottom coincides with the sum of the top position and the height of the view (total container height 2000)
     
 <br>
