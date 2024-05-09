@@ -10,17 +10,13 @@ https://github.com/alfredo1995/unity-infinite-reusable-scroll-view/assets/711938
 
 ScrollView.cs
 
-    Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.
-    
-    Initial configuration of a flexible content layout within a RectTransform, taking into account margins and orientation (horizontal or vertical).
-    
+    Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.    
+   
 InfiniteScroll.cs
 
-    Implementing infinite scroll functionality for a ScrollView, allowing items to dynamically reposition themselves when dragging or scrolling the ScrollView.
+    Implementing infinite scroll functionality for a ScrollView, allowing items to dynamically reposition themselves when dragging or scrolling the ScrollView. checking whether an item has reached the limit for scrolling out of view in a ScrollView,
             
-    Determining drags, scroll events, mouse scroll wheel movement, ScrollRect and handling them in view components    
-    
-    ReachedThreshold(Transform item) function checking whether an item has reached the limit for scrolling out of view in a ScrollView, based on the orientation (vertical or horizontal) of the ScrollView and the user's dragging direction.
+    Determining drags, scroll events, mouse scroll wheel movement, ScrollRect and handling them in view components        
 
 ItemManager.cs
 
