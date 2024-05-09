@@ -14,17 +14,11 @@ ScrollView.cs
     
     Initial configuration of a flexible content layout within a RectTransform, taking into account margins and orientation (horizontal or vertical).
     
-    Positioning of child elements within the parent object's RectTransform, maintaining an orderly and spaced arrangement according to the layout orientation (horizontal or vertical).
-
 InfiniteScroll.cs
 
     Logic: Implementing infinite scroll functionality for a ScrollView, allowing items to dynamically reposition themselves when dragging or scrolling the ScrollView.
-    
-    ScrollRect to allow ("unrestricted") scrolling and movement based on the scrollContent properties, respectively.
-        
-    Determining when an object starts dragging with an OnBeginDrag function. While an object is being dragged (during pointer movement). Using the OnDrag function
-    
-    Scroll event, mouse scroll wheel movement. Returning the OnScroll call. Using the OnViewScroll() Function to handle scroll events in a view component.
+            
+    Determining drags, scroll events, mouse scroll wheel movement, ScrollRect and handling them in view components    
     
     ReachedThreshold(Transform item) function checking whether an item has reached the limit for scrolling out of view in a ScrollView, based on the orientation (vertical or horizontal) of the ScrollView and the user's dragging direction.
 
@@ -79,7 +73,7 @@ Clone the repository:
     Alternatively, you can use the hotkey (usually F5) to launch the game
  
 <br>
-<h3> 5° Game Execution: </h3> 
+<h3> 5° App Execution: </h3> 
 
     Access the URL below to download and run the APK (Android) or IPA (iOS) file on your device and tap it to start installing and running the game. 
 > https://abre.ai/webgl-scroll-view   
