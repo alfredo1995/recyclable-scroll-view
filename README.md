@@ -44,16 +44,16 @@ DetectVisibility.cs
 <br>
 <h3> 3° Applied optimization techniques and the results obtained. </h3>
 
-    Use of Object Pooling: In the InfiniteScroll script, the object pooling technique is employed by recycling existing elements instead of instantiating new objects whenever necessary.     
-
-    Dynamic Item Creation: In ItemManager, you dynamically create items based on a list of colors. This can be optimized by properly configuring the object pool and ensuring that unused elements are disabled when off-screen to reduce resource usage.
-
-    Use of Prefabs and Reusable Components: The use of prefabs and reusable components such as Image, RectTransform, etc. contributes to the modularity and reusability of UI elements, which can improve development efficiency and UI performance.
-
-    Configuration of ScrollViews: In the ScrollContent and InfiniteScroll scripts, you are dealing with the configuration and manipulation of ScrollViews. Ensuring that ScrollViews and their contents are configured correctly in terms of size, layout, and positioning can improve the fluidity and responsiveness of the UI, on devices with different resolutions.
+    Use of object pooling in the InfiniteScroll and DetectVisibility script, employing the object pooling technique to recycle existing elements instead of instantiating new objects whenever necessary.
     
-    Optimizing UI Updates when elements that are dynamically updated in the UI, such as changes in color, size, or position, it is important to optimize the code to avoid unnecessary updates. For example, you can use efficient methods to modify UI elements only when necessary, thus minimizing update operations.
+    Dynamic item creation based on a core list. This can be optimized by configuring the set of objects and ensuring that elements are not used disabled when off-screen to reduce resource usage.
+    
+    Use of pre-made and reusable components like Image, RectTransform, etc. Contributing to modularity and reusability of UI elements, improving development efficiency and UI performance.
+    
+    ScrollViews Configuration dealing with configuration and manipulation of ScrollViews. Ensuring that ScrollViews and their content are configured correctly in terms of size, layout and positioning can improve the fluidity and responsiveness of the UI, across devices with different resolutions.
 
+    Optimizing UI updates when elements are dynamically updated in the UI, such as color, size, or position changes,
+    
 <br>  
 <h3> 4° Project Execution </h3> 
 
