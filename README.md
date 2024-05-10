@@ -68,6 +68,9 @@ Clone the repository:
     Find and select the desired cloning method, such as HTTPS or SSH (Copy Clone URL)
 
     Alternatively, you can use the hotkey (usually F5) to launch the game
+
+    REDOING
+ > https://github.com/alfredo1995/recyclable-scroll-view
  
 <br>
 <h3> 5° App Execution: </h3> 
