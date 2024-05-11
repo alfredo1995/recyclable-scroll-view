@@ -14,7 +14,7 @@ ScrollView.cs
    
 InfiniteScroll.cs
 
-    Implementing infinite scroll functionality for a ScrollView, allowing items to dynamically reposition themselves when dragging or scrolling the ScrollView. checking whether an item has reached the limit for scrolling out of view in a ScrollView,
+    Implementing infinite scroll functionality for a ScrollView, allowing items to dynamically reposition themselves when dragging or scrolling the ScrollView. 
             
     Determining drags, scroll events, mouse scroll wheel movement, ScrollRect and handling them in view components        
 
@@ -28,16 +28,12 @@ ColotList.cs
 
 DetectVisibility.cs
 
-    Implementing a recycling mechanism (Object Pooling) to remove recycled color elements from the visible area in a scroll view. 
-    
-    Missing to calculate the visible area (height 290) of the scroll view is to define its height and top position, while the bottom coincides with the sum of the top position and the height of the view (total container height 2000)
-    
+    Implementing a recycling mechanism (Object Pooling) to remove recycled color elements from the visible area in a scroll view.     
+   
 <br>
-<h3> 2° Project Architecture (Component-Based Design) for each component to have a specific responsibility, such as managing game logic, the appearance of objects and user interaction. </h3> 
+<h3> 2° Project Architecture (Component-Based Design) for each component to have a specific responsibility </h3> 
 
     This software architecture for game development that follows principles of object-oriented design, modularity, and component reuse.
-
-    Content management system to handle dynamic creation of items in the UI based on a list of colors. Where objects are instantiated and dynamically managed at runtime.
 
     The factory design pattern for creating objects from a prefab where objects are created without the need for direct code building
 
@@ -68,8 +64,6 @@ Clone the repository:
     Find and select the desired cloning method, such as HTTPS or SSH (Copy Clone URL)
 
     Alternatively, you can use the hotkey (usually F5) to launch the game
-    
- > REDOING https://github.com/alfredo1995/recyclable-scroll-view
  
 <br>
 <h3> 5° App Execution: </h3> 
