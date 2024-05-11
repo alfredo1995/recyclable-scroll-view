@@ -31,7 +31,7 @@ DetectVisibility.cs
     Implementing a recycling mechanism (Object Pooling) to remove recycled color elements from the visible area in a scroll view.     
    
 <br>
-<h3> 2° Project Architecture (Component-Based Design) for each component to have a specific responsibility </h3> 
+<h3> 2° Project Architecture (Component-Based Design) Single Responsibility </h3> 
 
     This software architecture for game development that follows principles of object-oriented design, modularity, and component reuse.
 
