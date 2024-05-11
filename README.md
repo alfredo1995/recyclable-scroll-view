@@ -1,26 +1,19 @@
 
 
 
-https://github.com/alfredo1995/unity-infinite-reusable-scroll-view/assets/71193893/543619b6-ad68-44a6-9058-1bed693cf3aa
+https://github.com/alfredo1995/unity-infinite-reusable-scroll-view/assets/71193893/81572d2c-f90b-4538-95d1-e979d66b6a3d
 
 
 
-
-<h3> 1° Practical Implementation: Developed an infinite and recyclable ScrollView that can be used in mobile and desktop WebGL applications. </h3> 
+<h3> Implementation of the infinite and recyclable ScrollView that can be used in mobile and desktop WebGL applications. </h3>
 
 ScrollView.cs
 
-    Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.
-    
-    Initial configuration of a flexible content layout within a RectTransform, taking into account margins and orientation (horizontal or vertical).
-    
+    Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.    
+   
 InfiniteScroll.cs
 
-    Implementing infinite scroll functionality for a ScrollView, allowing items to dynamically reposition themselves when dragging or scrolling the ScrollView.
-            
-    Determining drags, scroll events, mouse scroll wheel movement, ScrollRect and handling them in view components    
-    
-    ReachedThreshold(Transform item) function checking whether an item has reached the limit for scrolling out of view in a ScrollView, based on the orientation (vertical or horizontal) of the ScrollView and the user's dragging direction.
+    infinite scroll functionality for items dynamically reposition themselves when dragging or scrolling.(Determining drags, scroll events, mouse scroll wheel movement) 
 
 ItemManager.cs
 
@@ -32,32 +25,28 @@ ColotList.cs
 
 DetectVisibility.cs
 
-    Implementing a recycling mechanism (Object Pooling) to remove recycled color elements from the visible area in a scroll view. (Missing to calculate the visible area (height 290) of the scroll view is to define its height and top position, while the bottom coincides with the sum of the top position and the height of the view (total container height 2000)
-    
+    Implementing a recycling mechanism (Object Pooling) to remove recycled color elements from the visible area in a scroll view.     
+   
 <br>
-<h3> 2° Project Architecture (Component-Based Design) for each component to have a specific responsibility, such as managing game logic, the appearance of objects and user interaction. </h3> 
+<h3> 2° Project Architecture (Component-Based Design) Single Responsibility </h3> 
 
-    Content Management System: ItemManager handling dynamic creation of items in the UI based on a list of colors. Where objects are instantiated and dynamically managed at runtime.
-    
-    Factory Design Pattern: Using Instantiate to create objects from a prefab follows a simplified factory design pattern, where objects are created without the need for direct code construction, making the system more flexible and modular.
-    
-    Scriptable Objects: Using a ScriptableObject to store a list of colors (ColorList) is a common practice for maintaining data and settings that can be shared between multiple objects and instances during game execution.
+    This software architecture for game development that follows principles of object-oriented design, modularity, and component reuse.
 
-    This software architecture for game development follows principles of object-oriented design, modularity and component reuse. Contributing to organized, flexible, and scalable code as your game project evolves.
+    Using the factory design pattern to create objects from a prefab, where objects are being created without the need for direct building code
+    
+    Using ScriptableObject to store a list of colors (ColorList) to hold data and settings that can be shared between multiple objects and instances during game execution.
     
 <br>
 <h3> 3° Applied optimization techniques and the results obtained. </h3>
 
-    Use of Object Pooling: In the InfiniteScroll script, the object pooling technique is employed by recycling existing elements instead of instantiating new objects whenever necessary.     
-
-    Dynamic Item Creation: In ItemManager, you dynamically create items based on a list of colors. This can be optimized by properly configuring the object pool and ensuring that unused elements are disabled when off-screen to reduce resource usage.
-
-    Use of Prefabs and Reusable Components: The use of prefabs and reusable components such as Image, RectTransform, etc. contributes to the modularity and reusability of UI elements, which can improve development efficiency and UI performance.
-
-    Configuration of ScrollViews: In the ScrollContent and InfiniteScroll scripts, you are dealing with the configuration and manipulation of ScrollViews. Ensuring that ScrollViews and their contents are configured correctly in terms of size, layout, and positioning can improve the fluidity and responsiveness of the UI, on devices with different resolutions.
+    Using the object pooling technique to recycle existing elements instead of instantiating new objects whenever necessary.
     
-    Optimizing UI Updates when elements that are dynamically updated in the UI, such as changes in color, size, or position, it is important to optimize the code to avoid unnecessary updates. For example, you can use efficient methods to modify UI elements only when necessary, thus minimizing update operations.
-
+    Dynamic creation of items based on a master list. Optimizing the set of objects and ensuring that elements are not used is disabled when they are off-screen to reduce resource usage.
+    
+    Use of prefabricated and reusable components, to contribute to the modularity and reuse of UI elements
+    
+    Handling ScrollViews with content correctly configured in terms of size, layout and positioning to improve UI fluidity and responsiveness   
+    
 <br>  
 <h3> 4° Project Execution </h3> 
 
