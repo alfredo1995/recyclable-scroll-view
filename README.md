@@ -14,9 +14,7 @@ ScrollView.cs
    
 InfiniteScroll.cs
 
-    Implementing infinite scroll functionality for a ScrollView, allowing items to dynamically reposition themselves when dragging or scrolling the ScrollView. 
-            
-    Determining drags, scroll events, mouse scroll wheel movement, ScrollRect and handling them in view components        
+    infinite scroll functionality for items dynamically reposition themselves when dragging or scrolling.(Determining drags, scroll events, mouse scroll wheel movement) 
 
 ItemManager.cs
 
