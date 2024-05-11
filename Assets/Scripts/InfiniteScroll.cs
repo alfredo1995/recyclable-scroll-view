@@ -32,10 +32,14 @@ public class InfiniteScroll : MonoBehaviour, IBeginDragHandler, IDragHandler, IS
     public void OnBeginDrag(PointerEventData eventData)
     {
         lastDragPosition = eventData.position;
+
+        Debug.Log("Começo do arrasto");
     }
 
     public void OnDrag(PointerEventData eventData)
     {
+        Debug.Log("arrastando");
+
         if (scrollContent.Vertical)
         {
             positiveDrag = eventData.position.y > lastDragPosition.y;
@@ -51,6 +55,8 @@ public class InfiniteScroll : MonoBehaviour, IBeginDragHandler, IDragHandler, IS
 
     public void OnScroll(PointerEventData eventData)
     {
+        Debug.Log("OnScroll");
+
         if (scrollContent.Vertical)
         {
             positiveDrag = eventData.scrollDelta.y > 0;
@@ -65,9 +71,12 @@ public class InfiniteScroll : MonoBehaviour, IBeginDragHandler, IDragHandler, IS
 
     public void OnViewScroll()
     {
+        Debug.Log("OnViewScroll");
+
         if (scrollContent.Vertical)
         {
             HandleVerticalScroll();
+
         }
         else
         {
@@ -80,6 +89,9 @@ public class InfiniteScroll : MonoBehaviour, IBeginDragHandler, IDragHandler, IS
     {
         int currItemIndex = positiveDrag ? scrollRect.content.childCount - 1 : 0;
         var currItem = scrollRect.content.GetChild(currItemIndex);
+
+        Debug.Log("HandleVerticalScroll");
+
 
         if (!ReachedThreshold(currItem))
         {
