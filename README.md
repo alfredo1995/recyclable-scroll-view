@@ -4,13 +4,11 @@ https://github.com/alfredo1995/unity-infinite-reusable-scroll-view/assets/711938
 
 ScrollRectPool.cs
 
- 	Gerencia um pool de objetos (representados por GameObjects) em uma ScrollRect, 
-        permitindo ativar objetos conforme necessário para evitar a criação e destruição frequente de objetos, o que pode ser mais eficiente em termos de desempenho.
+ 	Gerencia um pool de objetos (representados por GameObjects) em uma ScrollRect, permitindo ativar objetos conforme necessário para evitar a criação e destruição frequente de objetos, o que pode ser mais eficiente em termos de desempenho.
 
 Item.cs
 
-	Controla o comportamento de um item na cena, permitindo que ele seja ativado, desativado e tenha seu texto atualizado conforme necessário. 
-        Mantém controle sobre se o item está visível ou invisível, para gerenciamento do sistema de pool de objetos.
+	Controla o comportamento de um item na cena, permitindo que ele seja ativado, desativado e tenha seu texto atualizado conforme necessário. Mantém controle sobre se o item está visível ou invisível, para gerenciamento do sistema de pool de objetos.
    
 ItemList.cs
 
@@ -22,8 +20,7 @@ InfiniteScroll.cs
 
 CheckVisibility.cs
 
-    	Gerenciando a visibilidade dos itens em uma lista dentro de um ScrollRect, ativando e desativando (Object Pooling) os itens conforme eles entram e saem da área visível da lista. 
-	Usando métodos do componente Item associado a cada item para controlar sua visibilidade e interage com o componente InfiniteScroll para lidar com a rolagem infinita da lista.
+    	Gerenciando a visibilidade dos itens em uma lista dentro de um ScrollRect, ativando e desativando (Object Pooling) os itens conforme eles entram e saem da área visível da lista (interage com o componente InfiniteScroll para lidar com a rolagem infinita da lista). 
 
 <br>
 <h3> Arquitetura de Projeto (Design Baseado em Componentes) Responsabilidade Única </h3>
