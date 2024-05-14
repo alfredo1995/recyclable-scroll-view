@@ -26,35 +26,35 @@ CheckVisibility.cs
 	Usando métodos do componente Item associado a cada item para controlar sua visibilidade e interage com o componente InfiniteScroll para lidar com a rolagem infinita da lista.
 
 <br>
-<h3> 2° Arquitetura de Projeto (Design Baseado em Componentes) Responsabilidade Única </h3>
+<h3> Arquitetura de Projeto (Design Baseado em Componentes) Responsabilidade Única </h3>
 	
         Cada componente ou classe tem uma única responsabilidade bem definida. Isso ajuda a manter o código mais organizado, fácil de entender, modificar e testar.
         Usando o padrão de projeto de fábrica para criar objetos a partir de uma pré-fabricada, onde os objetos são criados sem a necessidade de código de construção direto
 	    
 <br>
-<h3> 3° Técnicas de otimização aplicadas e resultados obtidos. </h3>
+<h3> Técnicas de otimização aplicadas e resultados obtidos. </h3>
 
 	Técnica de otimização:  Pooling de Objetos para reciclar elementos existentes em vez de instanciar novos objetos sempre que necessário.
         Resultados obtidos:     Evitando a alocação e desalocação frequente de memória, reduzindo a sobrecarga do coletor de lixo (garbage collector) e melhorando o desempenho geral da aplicação	
 
 	Técnica de otimização:  RectTransforms em Vez de Transforms para elementos de interface do usuário
-        Resultados obtidos:     Mais eficiente no uso de RectTransforms em termos de desempenho para elementos da UI, especialmente quando se trata de posicionamento e dimensionamento dentro de um layout de UI.
+        Resultados obtidos   :  Mais eficiente no uso de RectTransforms em termos de desempenho para elementos da UI, especialmente quando se trata de posicionamento e dimensionamento dentro de um layout de UI.
 
 	Técnica de otimização:  Reciclagem de Itens para listas longas com Scroll Infinito para itens visíveis, em vez de criar e destruir novos objetos conforme o usuário rola pela lista. 
-        Resultados obtidos:     Reduzindo a sobrecarga de criação e destruição de objetos, melhorando o desempenho e evitando picos de uso de memória.
+        Resultados obtidos   :  Reduzindo a sobrecarga de criação e destruição de objetos, melhorando o desempenho e evitando picos de uso de memória.
 
 	Técnica de otimização:  Métodos Eficientes para Verificar Visibilidade (O método OnScrollRectValueChanged no script CheckVisibility usa métodos eficientes para verificar se um item está visível ou não, como calcular a posição do item e dos cantos visíveis da lista). 
-        Resultados obtidos:     Evitando cálculos desnecessários ou complexos que possam impactar negativamente o desempenho.                                
+        Resultados obtidos   :  Evitando cálculos desnecessários ou complexos que possam impactar negativamente o desempenho.                                
 
 	Técnica de otimização: Singleton para Gerenciamento de Instância Única no script CheckVisibility para gerenciar uma instância única é uma prática eficiente, especialmente quando há necessidade de acesso global a uma única instância de um objeto. 
-        Resultados obtidos:    Evitando múltiplas alocações desnecessárias de memória para o mesmo objeto e simplifica o gerenciamento de estado global.
+        Resultados obtidos   : Evitando múltiplas alocações desnecessárias de memória para o mesmo objeto e simplifica o gerenciamento de estado global.
 
 	Técnica de otimização: Modularidade e Reutilização de Componentes UI. (Utilizando componentes pré-fabricados na criação dinâmica de itens com base em uma lista).
-	Resultados obtidos:    Otimização do conjunto de objetos e a garantia de que os elementos não sejam usados são desabilitados quando eles estão fora da tela para reduzir o uso de recursos.
+	Resultados obtidos   : Otimização do conjunto de objetos e a garantia de que os elementos não sejam usados são desabilitados quando eles estão fora da tela para reduzir o uso de recursos.
     
     
 <br>
-<h3> 4° Execução do Projeto </h3>
+<h3> Execução do Projeto </h3>
 
 Instalação do Editor Unity
 
@@ -65,7 +65,7 @@ Clone o repositório:
      Encontre e selecione o método de clonagem desejado, como HTTPS ou SSH (Copy Clone URL)
  
 <br>
-<h3> 5° Execução do aplicativo: </h3>
+<h3> Execução do aplicativo: </h3>
 
      Acesse a URL abaixo para baixar e executar o arquivo APK (Android) ou IPA (iOS) em seu dispositivo e toque nele para iniciar a instalação e execução do jogo.
 > https://abre.ai/apk-scroll
