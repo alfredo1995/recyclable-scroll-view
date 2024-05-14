@@ -1,163 +1,64 @@
-﻿using UnityEngine.EventSystems;
-using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class InfiniteScroll : MonoBehaviour, IBeginDragHandler, IDragHandler, IScrollHandler
+public class InfiniteScroll : MonoBehaviour
 {
-    #region Private Members
+    [SerializeField] public ScrollRect scrollRect;
 
-    [SerializeField]
-    private ScrollContent scrollContent;
+    public int currentPosInList = 0;
 
-    [SerializeField]
-    private float outOfBoundsThreshold;
+    [Space]
+    public float itemSpace = 150f;
+    public float itemHeight = 400f;
 
-    private ScrollRect scrollRect;
-
-    private Vector2 lastDragPosition;
-
-    private bool positiveDrag;
-
-    #endregion
+    public ItemList itemList = null;
 
     private void Start()
     {
         scrollRect = GetComponent<ScrollRect>();
-        scrollRect.vertical = scrollContent.Vertical;
-        scrollRect.horizontal = scrollContent.Horizontal;
         scrollRect.movementType = ScrollRect.MovementType.Unrestricted;
-    }
 
-
-    public void OnBeginDrag(PointerEventData eventData)
-    {
-        lastDragPosition = eventData.position;
-
-        Debug.Log("Começo do arrasto");
-    }
-
-    public void OnDrag(PointerEventData eventData)
-    {
-        Debug.Log("arrastando");
-
-        if (scrollContent.Vertical)
+        for (int i = 0; i < scrollRect.content.childCount; i++)
         {
-            positiveDrag = eventData.position.y > lastDragPosition.y;
+            scrollRect.content.GetChild(i).GetComponent<Item>().id = i;
+            scrollRect.content.GetChild(i).GetComponent<Item>().UpdateItem(itemList.items[i]);
         }
-        else if (scrollContent.Horizontal)
-        {
-            positiveDrag = eventData.position.x > lastDragPosition.x;
-        }
-
-        lastDragPosition = eventData.position;
     }
 
-
-    public void OnScroll(PointerEventData eventData)
+    public void HandleVerticalScroll(RectTransform _item)
     {
-        Debug.Log("OnScroll");
+        Item currentItem = _item.GetComponent<Item>();
+        int lastItemID = currentItem.above? scrollRect.content.childCount - 1 : 0;
 
-        if (scrollContent.Vertical)
+        var lastItemInList = scrollRect.content.GetChild(lastItemID);
+
+        Vector2 newPos = lastItemInList.position;
+
+        if (currentItem.above)
         {
-            positiveDrag = eventData.scrollDelta.y > 0;
+            newPos.y = lastItemInList.position.y - itemHeight * 1.5f + itemSpace;
+            _item.position = newPos;
+            _item.SetSiblingIndex(lastItemID);
+
+            if (currentItem.id + scrollRect.content.childCount < itemList.items.Count)
+            {
+                currentItem.id += scrollRect.content.childCount;
+                currentItem.UpdateItem(itemList.items[currentItem.id]);
+            }
         }
         else
         {
+            newPos.y = lastItemInList.position.y + itemHeight * 1.5f - itemSpace;
 
-            positiveDrag = eventData.scrollDelta.y < 0;
-        }
-    }
+            var lastPosInList = scrollRect.content.GetChild(scrollRect.content.childCount - 1);
+            lastPosInList.position = newPos;
+            lastPosInList.SetSiblingIndex(lastItemID);
 
-
-    public void OnViewScroll()
-    {
-        Debug.Log("OnViewScroll");
-
-        if (scrollContent.Vertical)
-        {
-            HandleVerticalScroll();
-
-        }
-        else
-        {
-            HandleHorizontalScroll();
-        }
-    }
-
-
-    private void HandleVerticalScroll()
-    {
-        int currItemIndex = positiveDrag ? scrollRect.content.childCount - 1 : 0;
-        var currItem = scrollRect.content.GetChild(currItemIndex);
-
-        Debug.Log("HandleVerticalScroll");
-
-
-        if (!ReachedThreshold(currItem))
-        {
-            return;
-        }
-
-        int endItemIndex = positiveDrag ? 0 : scrollRect.content.childCount - 1;
-        Transform endItem = scrollRect.content.GetChild(endItemIndex);
-        Vector2 newPos = endItem.position;
-
-        if (positiveDrag)
-        {
-            newPos.y = endItem.position.y - scrollContent.ChildHeight * 1.5f + scrollContent.ItemSpacing;
-        }
-        else
-        {
-            newPos.y = endItem.position.y + scrollContent.ChildHeight * 1.5f - scrollContent.ItemSpacing;
-        }
-
-        currItem.position = newPos;
-        currItem.SetSiblingIndex(endItemIndex);
-    }
-
-
-    private void HandleHorizontalScroll()
-    {
-        int currItemIndex = positiveDrag ? scrollRect.content.childCount - 1 : 0;
-        var currItem = scrollRect.content.GetChild(currItemIndex);
-        if (!ReachedThreshold(currItem))
-        {
-            return;
-        }
-
-        int endItemIndex = positiveDrag ? 0 : scrollRect.content.childCount - 1;
-        Transform endItem = scrollRect.content.GetChild(endItemIndex);
-        Vector2 newPos = endItem.position;
-
-        if (positiveDrag)
-        {
-            newPos.x = endItem.position.x - scrollContent.ChildWidth * 1.5f + scrollContent.ItemSpacing;
-        }
-        else
-        {
-            newPos.x = endItem.position.x + scrollContent.ChildWidth * 1.5f - scrollContent.ItemSpacing;
-        }
-
-        currItem.position = newPos;
-        currItem.SetSiblingIndex(endItemIndex);
-    }
-
-
-    private bool ReachedThreshold(Transform item)
-    {
-        if (scrollContent.Vertical)
-        {
-            float posYThreshold = transform.position.y + scrollContent.Height * 0.5f + outOfBoundsThreshold;
-            float negYThreshold = transform.position.y - scrollContent.Height * 0.5f - outOfBoundsThreshold;
-            return positiveDrag ? item.position.y - scrollContent.ChildWidth * 0.5f > posYThreshold :
-                item.position.y + scrollContent.ChildWidth * 0.5f < negYThreshold;
-        }
-        else
-        {
-            float posXThreshold = transform.position.x + scrollContent.Width * 0.5f + outOfBoundsThreshold;
-            float negXThreshold = transform.position.x - scrollContent.Width * 0.5f - outOfBoundsThreshold;
-            return positiveDrag ? item.position.x - scrollContent.ChildWidth * 0.5f > posXThreshold :
-                item.position.x + scrollContent.ChildWidth * 0.5f < negXThreshold;
+            if (currentItem.id - scrollRect.content.childCount > -1)
+            {
+                currentItem.id -= scrollRect.content.childCount;
+                currentItem.UpdateItem(itemList.items[currentItem.id]);
+            }        
         }
     }
 }
