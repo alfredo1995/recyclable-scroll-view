@@ -12,7 +12,7 @@ Item.cs
    
 ItemList.cs
 
-        Uso do ScriptableObject para criar um tipo de dado customizado chamado ItemList que esta sendo usado para armazenar uma lista de strings. 
+	Uso do ScriptableObject para criar um tipo de dado customizado chamado ItemList que esta sendo usado para armazenar uma lista de strings. 
 
 InfiniteScroll.cs
 
@@ -20,7 +20,7 @@ InfiniteScroll.cs
 
 CheckVisibility.cs
 
-    	Gerenciando a visibilidade dos itens em uma lista dentro de um ScrollRect, ativando e desativando (Object Pooling) os itens conforme eles entram e saem da área visível da lista (interage com o componente InfiniteScroll para lidar com a rolagem infinita da lista). 
+	Gerenciando a visibilidade dos itens em uma lista dentro de um ScrollRect, ativando e desativando (Object Pooling) os itens conforme eles entram e saem da área visível da lista (interage com o componente InfiniteScroll para lidar com a rolagem infinita da lista). 
 
 <br>
 <h3> Arquitetura de Projeto (Design Baseado em Componentes) Responsabilidade Única </h3>
