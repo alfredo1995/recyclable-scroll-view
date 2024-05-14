@@ -1,68 +1,71 @@
-
-
-
 https://github.com/alfredo1995/unity-infinite-reusable-scroll-view/assets/71193893/b714be7e-6b97-457c-8e19-f0c72ca3e869
 
+<h3> Implementação do ScrollView infinito e reciclável que pode ser usado em aplicações WebGL móveis e desktop. </h3>
 
+ScrollRectPool.cs
 
+ 	Gerencia um pool de objetos (representados por GameObjects) em uma ScrollRect, 
+        permitindo ativar objetos conforme necessário para evitar a criação e destruição frequente de objetos, o que pode ser mais eficiente em termos de desempenho.
 
-<h3> Implementation of the infinite and recyclable ScrollView that can be used in mobile and desktop WebGL applications. </h3>
+Item.cs
 
-ScrollView.cs
-
-    Managing the content of the ScrollView, organizing the arrangement and spacing of child items within it.    
+	Controla o comportamento de um item na cena, permitindo que ele seja ativado, desativado e tenha seu texto atualizado conforme necessário. 
+        Mantém controle sobre se o item está visível ou invisível, para gerenciamento do sistema de pool de objetos.
    
+ItemList.cs
+
+        Uso do ScriptableObject para criar um tipo de dado customizado chamado ItemList que esta sendo usado para armazenar uma lista de strings. 
+
 InfiniteScroll.cs
 
-    infinite scroll functionality for items dynamically reposition themselves when dragging or scrolling.(Determining drags, scroll events, mouse scroll wheel movement) 
+	Lógica de rolagem infinita p/ uma lista de itens em um ScrollRect, movendo os itens p/ cima ou p/ baixo, e atualizando os itens visíveis com novos dados da lista de itens.
 
-ItemManager.cs
+CheckVisibility.cs
 
-    Managing the dynamic creation of image items (Image) with specific colors, limiting the number of items created based on a color list (ColotList).
+    	Gerenciando a visibilidade dos itens em uma lista dentro de um ScrollRect, ativando e desativando (Object Pooling) os itens conforme eles entram e saem da área visível da lista. 
+	Usando métodos do componente Item associado a cada item para controlar sua visibilidade e interage com o componente InfiniteScroll para lidar com a rolagem infinita da lista.
 
-ColotList.cs
-    
-    Using ScriptableObject as a color list resource that can be created and managed in the Editor
-
-DetectVisibility.cs
-
-    Implementing a recycling mechanism (Object Pooling) to remove recycled color elements from the visible area in a scroll view.     
-   
 <br>
-<h3> 2° Project Architecture (Component-Based Design) Single Responsibility </h3> 
+<h3> 2° Arquitetura de Projeto (Design Baseado em Componentes) Responsabilidade Única </h3>
+	
+        Cada componente ou classe tem uma única responsabilidade bem definida. Isso ajuda a manter o código mais organizado, fácil de entender, modificar e testar.
+        Usando o padrão de projeto de fábrica para criar objetos a partir de uma pré-fabricada, onde os objetos são criados sem a necessidade de código de construção direto
+	    
+<br>
+<h3> 3° Técnicas de otimização aplicadas e resultados obtidos. </h3>
 
-    This software architecture for game development that follows principles of object-oriented design, modularity, and component reuse.
+	Técnica de otimização:  Pooling de Objetos para reciclar elementos existentes em vez de instanciar novos objetos sempre que necessário.
+        Resultados obtidos:     Evitando a alocação e desalocação frequente de memória, reduzindo a sobrecarga do coletor de lixo (garbage collector) e melhorando o desempenho geral da aplicação	
 
-    Using the factory design pattern to create objects from a prefab, where objects are being created without the need for direct building code
+	Técnica de otimização:  RectTransforms em Vez de Transforms para elementos de interface do usuário
+        Resultados obtidos:     Mais eficiente no uso de RectTransforms em termos de desempenho para elementos da UI, especialmente quando se trata de posicionamento e dimensionamento dentro de um layout de UI.
+
+	Técnica de otimização:  Reciclagem de Itens para listas longas com Scroll Infinito para itens visíveis, em vez de criar e destruir novos objetos conforme o usuário rola pela lista. 
+        Resultados obtidos:     Reduzindo a sobrecarga de criação e destruição de objetos, melhorando o desempenho e evitando picos de uso de memória.
+
+	Técnica de otimização:  Métodos Eficientes para Verificar Visibilidade (O método OnScrollRectValueChanged no script CheckVisibility usa métodos eficientes para verificar se um item está visível ou não, como calcular a posição do item e dos cantos visíveis da lista). 
+        Resultados obtidos:     Evitando cálculos desnecessários ou complexos que possam impactar negativamente o desempenho.                                
+
+	Técnica de otimização: Singleton para Gerenciamento de Instância Única no script CheckVisibility para gerenciar uma instância única é uma prática eficiente, especialmente quando há necessidade de acesso global a uma única instância de um objeto. 
+        Resultados obtidos:    Evitando múltiplas alocações desnecessárias de memória para o mesmo objeto e simplifica o gerenciamento de estado global.
+
+	Técnica de otimização: Modularidade e Reutilização de Componentes UI. (Utilizando componentes pré-fabricados na criação dinâmica de itens com base em uma lista).
+	Resultados obtidos:    Otimização do conjunto de objetos e a garantia de que os elementos não sejam usados são desabilitados quando eles estão fora da tela para reduzir o uso de recursos.
     
-    Using ScriptableObject to store a list of colors (ColorList) to hold data and settings that can be shared between multiple objects and instances during game execution.
     
 <br>
-<h3> 3° Applied optimization techniques and the results obtained. </h3>
+<h3> 4° Execução do Projeto </h3>
 
-    Using the object pooling technique to recycle existing elements instead of instantiating new objects whenever necessary.
-    
-    Dynamic creation of items based on a master list. Optimizing the set of objects and ensuring that elements are not used is disabled when they are off-screen to reduce resource usage.
-    
-    Use of prefabricated and reusable components, to contribute to the modularity and reuse of UI elements
-    
-    Handling ScrollViews with content correctly configured in terms of size, layout and positioning to improve UI fluidity and responsiveness   
-    
-<br>  
-<h3> 4° Project Execution </h3> 
+Instalação do Editor Unity
 
-Unity Editor Installation
+     instale o Unity Editor na versão 2022:3.27
 
-    install the Unity Editor in version 2022:3.27
+Clone o repositório:
 
-Clone the repository:
-
-    Find and select the desired cloning method, such as HTTPS or SSH (Copy Clone URL)
-
-    Alternatively, you can use the hotkey (usually F5) to launch the game
+     Encontre e selecione o método de clonagem desejado, como HTTPS ou SSH (Copy Clone URL)
  
 <br>
-<h3> 5° App Execution: </h3> 
+<h3> 5° Execução do aplicativo: </h3>
 
-    Access the URL below to download and run the APK (Android) or IPA (iOS) file on your device and tap it to start installing and running the game. 
+     Acesse a URL abaixo para baixar e executar o arquivo APK (Android) ou IPA (iOS) em seu dispositivo e toque nele para iniciar a instalação e execução do jogo.
 > https://abre.ai/apk-scroll
