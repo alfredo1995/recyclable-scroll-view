@@ -63,5 +63,5 @@ Clone o repositório:
 <br>
 <h3> Execução do aplicativo: </h3>
 
-     Acesse a URL abaixo para baixar e executar o arquivo APK (Android) ou IPA (iOS) em seu dispositivo e toque nele para iniciar a instalação.
+     Acesse a URL abaixo para baixar e executar o arquivo APK (Android) ou IPA (iOS) em seu dispositivo.
 > https://abre.ai/apk-scroll
