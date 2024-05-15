@@ -26,8 +26,7 @@ CheckVisibility.cs
 <h3> Arquitetura de Projeto (Design Baseado em Componentes) Responsabilidade Única </h3>
 	
         Cada componente ou classe tem uma única responsabilidade bem definida. Isso ajuda a manter o código mais organizado, fácil de entender, modificar e testar.
-        Usando o padrão de projeto de fábrica para criar objetos a partir de uma pré-fabricada, onde os objetos são criados sem a necessidade de código de construção direto
-	    
+    
 <br>
 <h3> Técnicas de otimização aplicadas e resultados obtidos. </h3>
 
