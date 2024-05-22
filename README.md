@@ -1,4 +1,4 @@
-https://github.com/alfredo1995/unity-infinite-reusable-scroll-view/assets/71193893/b714be7e-6b97-457c-8e19-f0c72ca3e869
+https://github.com/alfredo1995/recyclable-scroll-view/assets/71193893/a8eeb87b-7a91-49e0-b19a-96e2ca49db6d
 
 <h3> Implementação do ScrollView infinito e reciclável para aplicações WebGL móveis e desktop </h3>
 
