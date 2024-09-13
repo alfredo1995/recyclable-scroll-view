@@ -3,7 +3,7 @@ https://github.com/alfredo1995/recyclable-scroll-view/assets/71193893/a8eeb87b-7
 <h3> Implementação do ScrollView infinito e reciclável para aplicações WebGL móveis e desktop </h3>
 
 ScrollRectPool.cs
-
+ 
  	Gerencia um pool de objetos (representados por GameObjects) em uma ScrollRect, permitindo ativar objetos conforme necessário para evitar a criação e destruição frequente de objetos, o que pode ser mais eficiente em termos de desempenho.
 
 Item.cs
