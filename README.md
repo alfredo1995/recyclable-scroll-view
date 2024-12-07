@@ -34,9 +34,6 @@ CheckVisibility.cs
 	Modularidade e Reutilização de Componentes UI. (Utilizando componentes pré-fabricados na criação dinâmica de itens com base em uma lista).
 	Otimização do conjunto de objetos e a garantia de que os elementos não sejam usados são desabilitados quando eles estão fora da tela para reduzir o uso de recursos.
  
- 	No RectTransforms em Vez de Transforms para elementos de interface do usuário
-        Mais eficiente no uso de RectTransforms em termos de desempenho para elementos da UI, especialmente quando se trata de posicionamento e dimensionamento dentro de um layout de UI.
-
 	OnScrollRectValueChanged no script CheckVisibility verifcando se um item está visível ou não, como calcular a posição do item e dos cantos visíveis da lista. 
         Evitando cálculos desnecessários ou complexos que possam impactar negativamente o desempenho.                                
     
