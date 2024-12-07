@@ -31,8 +31,8 @@ CheckVisibility.cs
 	Singleton para Gerenciamento de Instância Única no script CheckVisibility, especialmente quando há necessidade de acesso global a uma única instância de um objeto. 
         Evitando múltiplas alocações desnecessárias de memória para o mesmo objeto e simplifica o gerenciamento de estado global.
 
-	Técnica de otimização: Modularidade e Reutilização de Componentes UI. (Utilizando componentes pré-fabricados na criação dinâmica de itens com base em uma lista).
-	Resultados obtidos   : Otimização do conjunto de objetos e a garantia de que os elementos não sejam usados são desabilitados quando eles estão fora da tela para reduzir o uso de recursos.
+	Modularidade e Reutilização de Componentes UI. (Utilizando componentes pré-fabricados na criação dinâmica de itens com base em uma lista).
+	Otimização do conjunto de objetos e a garantia de que os elementos não sejam usados são desabilitados quando eles estão fora da tela para reduzir o uso de recursos.
  
  	No RectTransforms em Vez de Transforms para elementos de interface do usuário
         Mais eficiente no uso de RectTransforms em termos de desempenho para elementos da UI, especialmente quando se trata de posicionamento e dimensionamento dentro de um layout de UI.
