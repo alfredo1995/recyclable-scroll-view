@@ -23,11 +23,6 @@ CheckVisibility.cs
 	Gerenciando a visibilidade dos itens em uma lista dentro de um ScrollRect, ativando e desativando (Object Pooling) os itens conforme eles entram e saem da área visível da lista (interage com o componente InfiniteScroll para lidar com a rolagem infinita da lista). 
 
 <br>
-<h3> Arquitetura de Projeto (Design Baseado em Componentes) Responsabilidade Única </h3>
-	
-        Cada componente ou classe tem uma única responsabilidade bem definida. Isso ajuda a manter o código mais organizado, fácil de entender, modificar e testar.
-    
-<br>
 <h3> Técnicas de otimização aplicadas e resultados obtidos. </h3>
 
 	Técnica de otimização:  Pooling de Objetos para reciclar elementos existentes em vez de instanciar novos objetos sempre que necessário.
