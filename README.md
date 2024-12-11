@@ -10,7 +10,7 @@ Item.cs
 
 	Controla o comportamento de um item na cena, permitindo que ele seja ativado, desativado e tenha seu texto atualizado conforme necessário. Mantém controle sobre se o item está visível ou invisível, para gerenciamento do sistema de pool de objetos.
    
-ItemList.cs
+ItemList.cs 
 
 	Uso do ScriptableObject para criar um tipo de dado customizado chamado ItemList que esta sendo usado para armazenar uma lista de strings. 
 
