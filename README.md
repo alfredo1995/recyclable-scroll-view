@@ -26,16 +26,16 @@ CheckVisibility.cs
 <h3> Optimization techniques applied and results obtained. </h3>
 
     Object Pooling to recycle existing elements instead of instantiating new objects whenever necessary.
-    Avoiding frequent allocation and deallocation of memory, reducing garbage collector overhead and improving overall application performance.
+    Avoiding frequent allocation and deallocation of memory, reducing garbage collector overhead.
 
-    Singleton for Single Instance Management in the CheckVisibility script, especially when there is a need for global access to a single instance of an object.
+    Singleton for Single Instance Management in the CheckVisibility script,
     Avoiding multiple unnecessary memory allocations for the same object and simplifying global state management.
 
     Optimizing the object pool and ensuring that unused elements are disabled when they are off-screen to reduce resource usage.
 
     Checks whether an item is visible or not, such as calculating the position of the item and the visible corners of the list.
 
-Avoiding unnecessary or complex calculations that could negatively impact performance.
+    Avoiding unnecessary or complex calculations that could negatively impact performance.
 
 <br>
 <h3> Running the Project</h3>
