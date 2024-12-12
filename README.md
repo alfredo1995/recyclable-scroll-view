@@ -1,56 +1,57 @@
 https://github.com/alfredo1995/recyclable-scroll-view/assets/71193893/a8eeb87b-7a91-49e0-b19a-96e2ca49db6d
 
-<h3> Implementação do ScrollView infinito e reciclável para aplicações WebGL móveis e desktop </h3>
+<h3> Implementation of infinite and recyclable ScrollView for mobile and desktop WebGL applications </h3>
 
 ScrollRectPool.cs
- 
- 	Gerencia um pool de objetos (representados por GameObjects) em uma ScrollRect, permitindo ativar objetos conforme necessário para evitar a criação e destruição frequente de objetos, o que pode ser mais eficiente em termos de desempenho.
+
+Manages a pool of objects (represented by GameObjects) in a ScrollRect, allowing you to activate objects as needed to avoid frequent object creation and destruction, which can be more efficient in terms of performance.
 
 Item.cs
 
-	Controla o comportamento de um item na cena, permitindo que ele seja ativado, desativado e tenha seu texto atualizado conforme necessário. Mantém controle sobre se o item está visível ou invisível, para gerenciamento do sistema de pool de objetos.
-   
-ItemList.cs 
+Controls the behavior of an item in the scene, allowing it to be activated, deactivated, and have its text updated as needed. Keeps track of whether the item is visible or invisible, for managing the object pool system.
 
-	Uso do ScriptableObject para criar um tipo de dado customizado chamado ItemList que esta sendo usado para armazenar uma lista de strings. 
+ItemList.cs
+
+Using ScriptableObject to create a custom data type called ItemList that is being used to store a list of strings.
 
 InfiniteScroll.cs
 
-	Lógica de rolagem infinita p/ uma lista de itens em um ScrollRect, movendo os itens p/ cima ou p/ baixo, e atualizando os itens visíveis com novos dados da lista de itens.
+Infinite scroll logic for a list of items in a ScrollRect, moving the items up or down, and updating the visible items with new data from the item list.
 
 CheckVisibility.cs
 
-	Gerenciando a visibilidade dos itens em uma lista dentro de um ScrollRect, ativando e desativando (Object Pooling) os itens conforme eles entram e saem da área visível da lista (interage com o componente InfiniteScroll para lidar com a rolagem infinita da lista). 
+Managing the visibility of items in a list within a ScrollRect, activating and deactivating (Object Pooling) the items as they enter and leave the visible area of ​​the list (interacts with the InfiniteScroll component to handle infinite scrolling of the list).
 
 <br>
-<h3> Técnicas de otimização aplicadas e resultados obtidos. </h3>
+<h3> Optimization techniques applied and results obtained. </h3>
 
-	Pooling de Objetos para reciclar elementos existentes em vez de instanciar novos objetos sempre que necessário.
-        Evitando a alocação e desalocação frequente de memória, reduzindo a sobrecarga do coletor de lixo (garbage collector) e melhorando o desempenho geral da aplicação	
+Object Pooling to recycle existing elements instead of instantiating new objects whenever necessary.
+Avoiding frequent allocation and deallocation of memory, reducing garbage collector overhead and improving overall application performance.
 
-	Singleton para Gerenciamento de Instância Única no script CheckVisibility, especialmente quando há necessidade de acesso global a uma única instância de um objeto. 
-        Evitando múltiplas alocações desnecessárias de memória para o mesmo objeto e simplifica o gerenciamento de estado global.
+Singleton for Single Instance Management in the CheckVisibility script, especially when there is a need for global access to a single instance of an object.
+Avoiding multiple unnecessary memory allocations for the same object and simplifying global state management.
 
-	Modularidade e Reutilização de Componentes UI. (Utilizando componentes pré-fabricados na criação dinâmica de itens com base em uma lista).
-	Otimização do conjunto de objetos e a garantia de que os elementos não sejam usados são desabilitados quando eles estão fora da tela para reduzir o uso de recursos.
- 
-	OnScrollRectValueChanged no script CheckVisibility verifcando se um item está visível ou não, como calcular a posição do item e dos cantos visíveis da lista. 
-        Evitando cálculos desnecessários ou complexos que possam impactar negativamente o desempenho.                                
-    
-    
+Modularity and Reusability of UI Components. (Using pre-made components to dynamically create items from a list).
+
+Optimizing the object pool and ensuring that unused elements are disabled when they are off-screen to reduce resource usage.
+
+OnScrollRectValueChanged in the CheckVisibility script checks whether an item is visible or not, such as calculating the position of the item and the visible corners of the list.
+
+Avoiding unnecessary or complex calculations that could negatively impact performance.
+
 <br>
-<h3> Execução do Projeto </h3>
+<h3> Running the Project</h3>
 
-Instalação do Editor Unity
+Installing the Unity Editor
 
-     instale o Unity Editor na versão 2022:3.27
+install the Unity Editor version 2022:3.27
 
-Clone o repositório:
+Clone the repository:
 
-     Encontre e selecione o método de clonagem desejado, como HTTPS ou SSH (Copy Clone URL)
- 
+Find and select the desired cloning method, such as HTTPS or SSH (Copy Clone URL)
+
 <br>
-<h3> Execução do aplicativo: </h3>
+<h3> Running the application:</h3>
 
-     Acesse a URL abaixo para baixar e executar o arquivo APK (Android) ou IPA (iOS) em seu dispositivo.
+Access the URL below to download and run the APK (Android) or IPA (iOS) file on your device.
 > https://abre.ai/apk-scroll
