@@ -1,6 +1,6 @@
 https://github.com/alfredo1995/recyclable-scroll-view/assets/71193893/a8eeb87b-7a91-49e0-b19a-96e2ca49db6d
 
-<h3> Implementation of infinite and recyclable ScrollView for mobile and desktop WebGL applications </h3>
+<h3> Infinite and Recyclable ScrollView for Mobile and Desktop WebGL Apps </h3>
 
 ScrollRectPool.cs
 
