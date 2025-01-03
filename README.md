@@ -5,7 +5,7 @@ https://github.com/alfredo1995/recyclable-scroll-view/assets/71193893/a8eeb87b-7
 ScrollRectPool.cs
 
     Manages a pool of objects (represented by GameObjects) in a ScrollRect, allowing you to activate objects as needed to avoid frequent object creation and destruction, which can be more efficient in terms of performance.
-
+ 
 Item.cs
 
     Controls the behavior of an item in the scene, allowing it to be activated, deactivated, and have its text updated as needed. Keeps track of whether the item is visible or invisible, for managing the object pool system.
