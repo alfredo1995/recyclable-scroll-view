@@ -13,7 +13,7 @@ Item.cs
 ItemList.cs
 
     Using ScriptableObject to create a custom data type called ItemList that is being used to store a list of strings.
-
+ 
 InfiniteScroll.cs
 
     Infinite scroll logic for a list of items in a ScrollRect, moving the items up or down, and updating the visible items with new data from the item list.
