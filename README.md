@@ -1,3 +1,6 @@
+[Unity Technical - Senior.pdf](https://github.com/user-attachments/files/31148364/Unity.Technical.-.Senior.pdf)
+
+
 https://github.com/alfredo1995/recyclable-scroll-view/assets/71193893/a8eeb87b-7a91-49e0-b19a-96e2ca49db6d
 
 <h3> Infinite and Recyclable ScrollView for Mobile and Desktop WebGL Apps </h3>
